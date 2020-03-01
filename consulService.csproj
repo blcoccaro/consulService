@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>consulService</PackageId>
     <Version>1.0.0</Version>
@@ -6,6 +6,7 @@
     <Company>BLC Corp</Company>
     <Title>Package to make http calls to the Consul by HashiCorp</Title>
     <Description>This package was create to make life more easy to make http calls to the Consul by HashCorp</Description>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -14,6 +15,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.2" />
     <PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="3.0.50" />
   </ItemGroup>
 </Project>
